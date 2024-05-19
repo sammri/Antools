@@ -1,3 +1,51 @@
-body{
-    background-color: #333;
+:root {
+    /* Кольори макету */
+    /* Текст */
+    --colorText: #fff;
+    --colorTextAdd: 255, 255, 255;
+    --colorButton: #FF6E30;
+    /* Фон */
+    --colorBackground: #1E252B;
+    --colorBackgroundSecondary: #f5f4fa;
 }
+body{
+    background-color: var(--colorBackground);
+    color: var(--colorText);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.66;
+    font-size: 16px;
+    font-style: normal;
+}
+.container {
+    max-width: 1254px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    padding-top: 26px;
+}
+.header-container, .header-photo, .header-menu, .header-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+.header-menu, .header-login {
+    color: rgba(var(--colorTextAdd), 55%);
+}
+.header-photo{
+    font-size: 22px;
+}
+.chevron{
+    padding-top: 5px;
+    width:18px;
+    height:18px;
+}
+.header-photo{
+    color: var(--colorText);
+}
+
