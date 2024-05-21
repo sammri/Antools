@@ -40,12 +40,16 @@ body {
 }
 
 .header-photo{
-    gap: 21.37px;
-    font-size: 22px;
-    font-weight: 600;
+    gap: 21.37px;   
     color: var(--colorText);
 }
-
+.header-title-logo, .footer-title-logo{
+    font-size: 22px;
+    font-weight: 600;
+}
+.header-link-logo{
+    height: 20.95px;
+}
 .header-menu, .header-login {
     color: rgba(var(--colorTextAdd), 55%);
     gap: 41px;
@@ -61,8 +65,11 @@ body {
     display: flex;
     align-items: center;
 }
-.login-item{
+.login-link{
     font-weight: 600;
+}
+.login-link:nth-child(1){
+    color: rgba(var(--colorTextAdd), 78%);
 }
 
 .chevron-menu::after {
@@ -82,11 +89,11 @@ body {
     font-weight: 400;
     font-size: 18px;
 }
-.hero-input{
+.hero-input, .contributor-input{
     font-weight: 400;
     font-size: 14px;
 }
-.hero-button{
+.hero-button, .contributor-button{
     font-weight: 600;
 }
 .tools-title{
@@ -98,12 +105,20 @@ body {
 .name-item-title, .block-item-title{
     font-size: 24px;
 }
-.name-item-text{
+.name-item-text, .block-item-text{
     font-weight: 400;
     font-size: 18px;
 }
 .card-description{
     font-weight: 400;
+    
+}
+.card-link{
+    font-weight: 600;
+}
+.newcomer-description{
+    font-weight: 400;
+    font-size: 14px;
 }
 .tools-button{
     font-size: 20px;
@@ -111,12 +126,46 @@ body {
 .brand-title{
     font-size: 24px;
 }
-.updates-title{
+.updates-title, .contributor-title{
     font-size: 48px;
+
 }
 .updates-text, .updates-button{
     font-size: 18px;
 }
+.developer-name{
+    font-size: 26px;
+}
+.developer-position{
+    font-weight: 400;
+}
+.developer-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contributor-subtitle{
+    font-size: 18;
+}
+.footer-list-item:nth-child(3){
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(var(--colorTextAdd), 55%);
+
+}
+.info-item-title{
+    font-size: 20px;    
+}
+.info-item, .hero-text,.tools-text,.updates-text,.newcomer-description,.developer-position,.contributor-subtitle{
+    color: rgba(var(--colorTextAdd), 55%);
+}
+.name-item-title,.block-item-title,.developer-name,.developer-text{
+    color: rgba(var(--colorTextAdd), 78%);
+}
+.header-title-logo,.hero-title,.tools-title,.updates-title,.contributor-title,.footer-title-logo,.info-item-title{
+    color: rgba(var(--colorTextAdd), 90%);
+}
+
 
 
 

@@ -22,11 +22,13 @@
     <header class="header">
       <div class="container header-container">
         <div class="header-photo">
-          <img
+          <a href="#" class="header-link-logo">
+            <img
             src="./src/img/logo/header-logo.webp"
             alt="logo-header"
             class="header-img"
           />
+          </a>
           <a href="#" class="header-title-logo">antools.</a>
         </div> 
         <nav class="header-nav">
@@ -55,7 +57,7 @@
             </a>
           </li>
         </ul>
-        
+      </div>
     </header>
     <main class="main">
       <section class="hero">
@@ -66,7 +68,7 @@
               Antool is a web collection of information on paid or free Design
               and Development tools
             </p>
-            <form action=""></form>
+            <form class="hero-form">
             <div class="hero-search">
               <input type="text" placeholder="find more than 430+ tools..."  class="hero-input"/>
               <button class="hero-button">Search</button>
@@ -93,6 +95,7 @@
                 </li>
               </ul>
             </div>
+          </form>
           </div>
           <div class="hero-bg"></div>
         </div>
@@ -105,8 +108,7 @@
             the world
           </p>
           <div class="tools-cards">
-            <!-- ar -->
-            <div class="card-name">
+            <article class="card-name">
               <img src="./src/img/popular-tools/figma.webp" alt="figma" />
               <ul class="name-list">
                 <li class="name-item-title">FIGMA</li>
@@ -120,10 +122,11 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
-                <button class="card-button">Visit</button>
+                <a href="#" class="card-link">Visit</a>
               </div>
-            </div>
-            <div class="card-name">
+            </article>
+            
+            <article class="card-name">
               <img src="./src/img/popular-tools/sketch.webp" alt="sketch" />
               <ul class="name-list">
                 <li class="name-item-title">Sketch</li>
@@ -137,11 +140,10 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
-                <button class="card-button">Visit</button>
-
+                <a href="#" class="card-link">Visit</a>
               </div>
-            </div>
-            <div class="card-name">
+            </article>
+            <article class="card-name">
               <img src="./src/img/popular-tools/vscode.webp" alt="vscode" />
               <ul class="name-list">
                 <li class="name-item-title">Visual Studio Code</li>
@@ -155,10 +157,11 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
-                <button class="card-button">Visit</button>
-              </div>
-            </div>
-            <div class="card-name">
+                <a href="#" class="card-link">Visit</a>
+              </div> 
+            </article>
+
+            <article class="card-name">
               <img src="./src/img/popular-tools/notion.webp" alt="notion" />
               <ul class="name-list">
                 <li class="name-item-title">Notion</li>
@@ -172,10 +175,12 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
-                <button class="card-button">Visit</button>
+                <a href="#" class="card-link">Visit</a>
               </div>
-            </div>
-            <div class="card-name">
+            </article>
+
+            <article class="card-name">
+
               <img src="./src/img/popular-tools/slack.webp" alt="slack" />
               <ul class="name-list">
                 <li class="name-item-title">Slack</li>
@@ -189,10 +194,12 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
-                <button class="card-button">Visit</button>
+                <a href="#" class="card-link">Visit</a>
               </div>
-            </div>
-            <div class="card-name">
+            </article>
+
+            <article class="card-name">
+
               <img src="./src/img/popular-tools/invision.webp" alt="invision" />
               <ul class="name-list">
                 <li class="name-item-title">Invision</li>
@@ -206,9 +213,9 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
-                <button class="card-button">Visit</button>
+                <a href="#" class="card-link">Visit</a>
               </div>
-            </div>
+            </article>
           </div>
           <button class="tools-button">Load more</button>
         </div>
@@ -218,27 +225,34 @@
           <div class="brand">
             <h2 class="brand-title">Trusted more than 150+ brand</h2>
             <div class="brands-photo">
-              <!-- a -->
-              <img
+              <a href="#">
+                <img
                 src="src/img/brand-images/microsoft.webp"
                 alt="microsoft"
                 class="brand-img"
               />
-              <img
+              </a>
+              <a href="#">
+                <img
                 src="src/img/brand-images/google.webp"
                 alt="google"
                 class="brand-img"
               />
-              <img
+              </a>
+              <a href="#">
+                <img
                 src="src/img/brand-images/slack.webp"
                 alt="slack"
                 class="brand-img"
               />
-              <img
+              </a>
+              <a href="#">
+                <img
                 src="src/img/brand-images/wordpress.webp"
                 alt="wordpress"
                 class="brand-img"
               />
+              </a>
             </div>
           </div>
         </div>
@@ -255,12 +269,12 @@
               <button class="updates-button">Explore more</button>
             </div>
             <div class="newcomer-blocks">
-              <div class="newcomer-block">
+              <article class="newcomer-block">
                 <img src="./src/img/updates/zeplin.webp" alt="invision" />
-                <ul class="name-list">
-                  <li class="block-item-title">Invision</li>
-                  <li class="block-item-text">Free & Paid</li>
-                </ul>
+                <div class="name-text">
+                  <h2 class="block-item-title">Zeplin</h2>
+                  <p class="block-item-text">Free & Paid</p>
+                </div>
                 <p class="newcomer-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -269,16 +283,16 @@
                     <img src="./src/img/visit-icons/like.webp" alt="like" />
                     <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                   </div>
+                <a href="#" class="card-link">Visit</a>
                 </div>
-              </div>
-            </div>
-            <div class="newcomer-blocks">
-              <div class="newcomer-block">
+              </article>
+  
+              <article class="newcomer-block">
                 <img src="./src/img/updates/phpstorm.webp" alt="invision" />
-                <ul class="name-list">
-                  <li class="block-item-title">Invision</li>
-                  <li class="block-item-text">Free</li>
-                </ul>
+                <div class="name-text">
+                  <h2 class="block-item-title">PHPStorm</h2>
+                  <p class="block-item-text">Free</p>
+                </div>
                 <p class="newcomer-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -287,16 +301,16 @@
                     <img src="./src/img/visit-icons/like.webp" alt="like" />
                     <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                   </div>
+                <a href="#" class="card-link">Visit</a>
                 </div>
-              </div>
-            </div>
-            <div class="newcomer-blocks">
-              <div class="newcomer-block">
+              </article>
+            
+              <article class="newcomer-block">
                 <img src="./src/img/updates/toolbox.webp" alt="invision" />
-                <ul class="name-list">
-                  <li class="block-item-title">Invision</li>
-                  <li class="block-item-text">Free</li>
-                </ul>
+                <div class="name-text">
+                  <h2 class="block-item-title">Toolbox</h2>
+                  <p class="block-item-text">Free</p>class
+                </div>
                 <p class="newcomer-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -305,16 +319,15 @@
                     <img src="./src/img/visit-icons/like.webp" alt="like" />
                     <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                   </div>
+                <a href="#" class="card-link">Visit</a>
                 </div>
-              </div>
-            </div>
-            <div class="newcomer-blocks">
-              <div class="newcomer-block">
+              </article>
+              <article class="newcomer-block">
                 <img src="./src/img/updates/procreate.webp" alt="invision" />
-                <ul class="name-list">
-                  <li class="block-item-title">Invision</li>
-                  <li class="block-item-text">Paid</li>
-                </ul>
+                <div class="name-text">
+                  <h2 class="block-item-title">Procreate</h2>
+                  <p class="block-item-text">Paid</p>
+                </div>
                 <p class="newcomer-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -323,9 +336,9 @@
                     <img src="./src/img/visit-icons/like.webp" alt="like" />
                     <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                   </div>
+                  <a href="#" class="card-link">Visit</a>
                 </div>
-              </div>
-            </div>
+              </article>
           </div>
         </div>
       </section>
@@ -350,23 +363,19 @@
               qui ad.
             </p>
           </div>
-          <div class="developer-line">
-            <div class="line-one"></div>
-            <div class="line-two"></div>
-            <div class="line-three"></div>
-          </div>
+          
         </div>
       </section>
       <section class="contributor">
         <div class="container">
 
           <h2 hidden>contributor</h2>
-          <!-- form  -->
-          <div class="contributor-title">contributor</div>
-          <div class="subtitle">
+          <form class="contributor">
+          <h2 class="contributor-title">Become a contributor?</h2>
+          <p class="contributor-subtitle">
             Join us and get tips & tricks to become a great Designer and
             Developer
-          </div>
+          </p>
           <div class="contributor-search">
             <input
               type="text"
@@ -375,6 +384,7 @@
             />
             <button class="contributor-button">Join Us</button>
           </div>
+        </form>
         </div>
       </section>
     </main>
@@ -382,10 +392,13 @@
       <div class="container">
           <ul class="footer-list">
             <li class="footer-list-item">
-              <img
+              <a href="#" class="footer-link-logo">
+                <img
                 src="src/img/footer-logo/footer-logo.webp"
                 alt="footer-logo"
               />
+              </a>
+              <a href="#" class="footer-title-logo">antools.</a>
             </li>
             <li class="footer-list-item">
               Copyright 2021. Antools
@@ -395,23 +408,23 @@
               and Development tools
             </li>
           </ul>
-          <ul class="footer-list-info">
-            <li class="info-item">Contact Us</li>
-            <li class="info-item">+621987463</li>
-            <li class="info-item">M Building, No.10 A</li>
-            <li class="info-item">antools@awesome.com</li>
-          </ul>
-          <ul class="footer-list-info">
-            <li class="info-item">Categories</li>
-            <li class="info-item">Design</li>
-            <li class="info-item">Development</li>
-          </ul>
-          <ul class="footer-list-info">
-            <li class="info-item">Company Info</li>
-            <li class="info-item">About Us</li>
-            <li class="info-item">Our Partners</li>
-            <li class="info-item">Blog</li>
-          </ul>
+          <div class="footer-list-info">
+            <span class="info-item-title"><a href="#" class="info-link">Contact Us</a></span>
+            <span class="info-item"><a href="tel:+621987463" class="info-link">+621987463</a></span>
+            <span class="info-item"><address class="info-address" class="info-link">M Building, No.10 A</address></span>
+            <span class="info-item"><a href="mailto:antools@awesome.com" class="info-link">antools@awesome.com</a></span>
+          </div>
+          <div class="footer-list-info">
+            <span class="info-item-title"><a href="#" class="info-link">Categories</a></span>
+            <span class="info-item"><a href="#" class="info-link">Design</a></span>
+            <span class="info-item"><a href="#" class="info-link">Development</a></span>
+          </div>
+          <div class="footer-list-info">
+            <span class="info-item-title"><a href="#" class="info-link">Company Info</a></span>
+            <span class="info-item"><a href="#" class="info-link">About Us</a></span>
+            <span class="info-item"><a href="#" class="info-link">Our Partners</a></span>
+            <span class="info-item"><a href="#" class="info-link">Blog</a></span>
+          </div>
         </div>
     </footer>
   </body>
