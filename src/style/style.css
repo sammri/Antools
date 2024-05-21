@@ -1,14 +1,12 @@
 :root {
-    /* Кольори макету */
-    /* Текст */
     --colorText: #fff;
     --colorTextAdd: 255, 255, 255;
     --colorButton: #FF6E30;
-    /* Фон */
     --colorBackground: #1E252B;
     --colorBackgroundSecondary: #f5f4fa;
 }
-body{
+
+body {
     background-color: var(--colorBackground);
     color: var(--colorText);
     font-family: "Poppins", sans-serif;
@@ -17,6 +15,8 @@ body{
     font-size: 16px;
     font-style: normal;
 }
+
+
 .container {
     max-width: 1254px;
     padding-left: 15px;
@@ -25,27 +25,101 @@ body{
     margin-right: auto;
 }
 
-.header{
+
+
+.header {
     padding-top: 26px;
 }
-.header-container, .header-photo, .header-menu, .header-login{
+
+.header-container, .header-photo, .header-menu, .header-login {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    cursor: pointer;
 }
-.header-menu, .header-login {
-    color: rgba(var(--colorTextAdd), 55%);
-}
+
 .header-photo{
+    gap: 21.37px;
     font-size: 22px;
-}
-.chevron{
-    padding-top: 5px;
-    width:18px;
-    height:18px;
-}
-.header-photo{
+    font-weight: 600;
     color: var(--colorText);
 }
+
+.header-menu, .header-login {
+    color: rgba(var(--colorTextAdd), 55%);
+    gap: 41px;
+}
+
+.header-img {
+    width: 19.38px;
+    height: 20.95px;
+}
+
+.menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.login-item{
+    font-weight: 600;
+}
+
+.chevron-menu::after {
+    content: '';
+    width: 18px; 
+    height: 18px; 
+    background-image: url('../img/menu-icon/chevron-down.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+.hero-title{
+    font-size: 50px;
+}
+.hero-text{
+    font-weight: 400;
+    font-size: 18px;
+}
+.hero-input{
+    font-weight: 400;
+    font-size: 14px;
+}
+.hero-button{
+    font-weight: 600;
+}
+.tools-title{
+    font-size: 48px;
+}
+.tools-text{
+    font-size: 18px;
+}
+.name-item-title, .block-item-title{
+    font-size: 24px;
+}
+.name-item-text{
+    font-weight: 400;
+    font-size: 18px;
+}
+.card-description{
+    font-weight: 400;
+}
+.tools-button{
+    font-size: 20px;
+}
+.brand-title{
+    font-size: 24px;
+}
+.updates-title{
+    font-size: 48px;
+}
+.updates-text, .updates-button{
+    font-size: 18px;
+}
+
+
+
+
+
 

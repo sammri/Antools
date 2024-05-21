@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -14,8 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/style/style.css" />
     <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
   </head>
   <body>
     <header class="header">
@@ -26,24 +27,36 @@
             alt="logo-header"
             class="header-img"
           />
-          <p class="header-title-logo">antools.</p>
+          <a href="#" class="header-title-logo">antools.</a>
         </div> 
-        <div class="header-menu">
-          <div class="menu-item">Home</div>
-          <div class="menu-item">Categories</div>
-          <div class="menu-chevron"> <img src="src/img/menu-icon/chevron-down.webp" alt="chevron" class="chevron"></div>
-          <div class="menu-item">My Collections</div>
-          <div class="menu-item">Blog</div>
-        </div>
-        <ul class="header-login">
-          <li class="login-item">Login</li>
-          <li class="login-item">
-            <button class="login-button">Sign Up</button>
+        <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">Home</a>
+          </li>
+          <li class="menu-item chevron-menu">
+            <a href="#" class="menu-link">Categories</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">My Collections</a>
+            </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Blog</a>
           </li>
         </ul>
-      </div>
+      </nav>
+        <ul class="header-login">
+          <li class="login-item">
+            <a href="#" class="login-link">Login</a>
+          </li>
+          <li class="login-item">
+            <a href="#" class="login-link">
+            <button class="login-button">Sign Up</button>
+            </a>
+          </li>
+        </ul>
+        
     </header>
-
     <main class="main">
       <section class="hero">
         <div class="container">
@@ -53,8 +66,9 @@
               Antool is a web collection of information on paid or free Design
               and Development tools
             </p>
+            <form action=""></form>
             <div class="hero-search">
-              <input type="text" placeholder="find more than 430+ tools..." />
+              <input type="text" placeholder="find more than 430+ tools..."  class="hero-input"/>
               <button class="hero-button">Search</button>
             </div>
             <div class="network">
@@ -91,6 +105,7 @@
             the world
           </p>
           <div class="tools-cards">
+            <!-- ar -->
             <div class="card-name">
               <img src="./src/img/popular-tools/figma.webp" alt="figma" />
               <ul class="name-list">
@@ -105,6 +120,7 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
+                <button class="card-button">Visit</button>
               </div>
             </div>
             <div class="card-name">
@@ -121,6 +137,8 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
+                <button class="card-button">Visit</button>
+
               </div>
             </div>
             <div class="card-name">
@@ -137,6 +155,7 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
+                <button class="card-button">Visit</button>
               </div>
             </div>
             <div class="card-name">
@@ -153,6 +172,7 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
+                <button class="card-button">Visit</button>
               </div>
             </div>
             <div class="card-name">
@@ -169,6 +189,7 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
+                <button class="card-button">Visit</button>
               </div>
             </div>
             <div class="card-name">
@@ -185,6 +206,7 @@
                   <img src="./src/img/visit-icons/like.webp" alt="like" />
                   <img src="./src/img/visit-icons/folder.webp" alt="folder" />
                 </div>
+                <button class="card-button">Visit</button>
               </div>
             </div>
           </div>
@@ -196,6 +218,7 @@
           <div class="brand">
             <h2 class="brand-title">Trusted more than 150+ brand</h2>
             <div class="brands-photo">
+              <!-- a -->
               <img
                 src="src/img/brand-images/microsoft.webp"
                 alt="microsoft"
@@ -310,7 +333,7 @@
         <div class="container">
           <div class="developer">
 
-            <h2 hidden>antools</h2>
+            <h2 hidden>developer</h2>
 
             <div class="developer-data">
               <div class="developer-name">Ronald Richards</div>
@@ -337,8 +360,8 @@
       <section class="contributor">
         <div class="container">
 
-          <h2 hidden>antools</h2>
-          
+          <h2 hidden>contributor</h2>
+          <!-- form  -->
           <div class="contributor-title">contributor</div>
           <div class="subtitle">
             Join us and get tips & tricks to become a great Designer and
@@ -357,7 +380,6 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-lists">
           <ul class="footer-list">
             <li class="footer-list-item">
               <img
@@ -391,7 +413,6 @@
             <li class="info-item">Blog</li>
           </ul>
         </div>
-      </div>
     </footer>
   </body>
 </html>
