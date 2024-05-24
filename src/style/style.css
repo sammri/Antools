@@ -1,8 +1,10 @@
 :root {
     --colorText: #fff;
+    --colorTextButton: #FDF5FF;
     --colorTextAdd: 255, 255, 255;
     --colorButton: #FF6E30;
     --colorBackground: #1E252B;
+    --colorInputBackground: #283036;
     --colorBackgroundSecondary: #f5f4fa;
 }
 
@@ -46,6 +48,7 @@ body {
 .header-title-logo, .footer-title-logo{
     font-size: 22px;
     font-weight: 600;
+    color: rgba(var(--colorTextAdd), 90%);
 }
 .header-link-logo{
     height: 20.95px;
@@ -59,7 +62,16 @@ body {
     width: 19.38px;
     height: 20.95px;
 }
-
+.header-nav{
+    padding-left: 257px;
+    padding-right: 193px;
+}
+.login-button{
+    background-color: var(--colorButton);
+    border-radius: 8px;
+    padding: 12px 28px 12px 28px;
+    color: var(--colorTextButton);
+}
 .menu-item {
     position: relative;
     display: flex;
@@ -81,13 +93,64 @@ body {
     background-repeat: no-repeat;
     margin-left: 5px;
 }
+.hero-container{
+    display: flex;
+    flex-direction: row;
 
+}
+.hero{
+    background-image: url(../img/hero-bg/hero-bg.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+
+.hero-flex{
+    padding-top: 104px;
+}
 .hero-title{
     font-size: 50px;
+    line-height: 140%;
+    padding-bottom: 30px;
 }
 .hero-text{
     font-weight: 400;
     font-size: 18px;
+    padding-bottom: 60px;
+}
+.hero-search {
+    display: flex;
+    align-items: center;
+    background: var(--colorInputBackground);
+    border-radius: 15px;
+    padding: 8px 11.04px 8px 18.06px;
+    max-width: 497px;
+}
+
+.hero-input {
+    border: none;
+    background: none;
+    color: var(--colorText);
+    flex: 1;
+    outline: none;  
+}
+
+.hero-input::placeholder {
+    color: rgba(var(--colorTextAdd), 38%);
+}
+
+.hero-button {
+    background-color: var(--colorButton);
+    font-weight: 600;
+    color: var(--colorText);
+    padding: 12px 36.12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover{
+    background-color: #ff7f24;
 }
 .hero-input, .contributor-input{
     font-weight: 400;
@@ -96,8 +159,30 @@ body {
 .hero-button, .contributor-button{
     font-weight: 600;
 }
+
+.network-list{
+    display: flex;
+    gap: 30px;
+    padding-top: 110px;
+}
+
+.tools-title_subtitle h2{
+    padding: 191.85px 384px 20px 385px;
+    text-align: center;
+}
+.tools-title_subtitle p{
+    padding: 0px 398px 90px 399px;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    
+}
 .tools-title{
     font-size: 48px;
+    font-weight: 130%;
 }
 .tools-text{
     font-size: 18px;

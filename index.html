@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antools</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./src/style/reset.css" />
-    <link rel="stylesheet" href="./src/style/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-container">
-        <div class="header-photo">
-          <a href="#" class="header-link-logo">
-            <img
-            src="./src/img/logo/header-logo.webp"
-            alt="logo-header"
-            class="header-img"
-          />
-          </a>
-          <a href="#" class="header-title-logo">antools.</a>
-        </div> 
-        <nav class="header-nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/style/reset.css" />
+  <link rel="stylesheet" href="./src/style/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-photo">
+        <a href="#" class="header-link-logo">
+          <img src="./src/img/logo/header-logo.webp" alt="logo-header" class="header-img" />
+        </a>
+        <a href="#" class="header-title-logo">antools.</a>
+      </div>
+      <nav class="header-nav">
         <ul class="header-menu">
           <li class="menu-item">
             <a href="#" class="menu-link">Home</a>
@@ -41,391 +35,379 @@
           </li>
           <li class="menu-item">
             <a href="#" class="menu-link">My Collections</a>
-            </li>
+          </li>
           <li class="menu-item">
             <a href="#" class="menu-link">Blog</a>
           </li>
         </ul>
       </nav>
-        <ul class="header-login">
-          <li class="login-item">
-            <a href="#" class="login-link">Login</a>
-          </li>
-          <li class="login-item">
-            <a href="#" class="login-link">
+      <ul class="header-login">
+        <li class="login-item">
+          <a href="#" class="login-link">Login</a>
+        </li>
+        <li class="login-item">
+          <a href="#" class="login-link">
             <button class="login-button">Sign Up</button>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="main">
-      <section class="hero">
-        <div class="container">
-          <div class="hero-form">
-            <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-            <p class="hero-text">
-              Antool is a web collection of information on paid or free Design
-              and Development tools
-            </p>
-            <form class="hero-form">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-flex">
+          <h1 class="hero-title">Awesome tools for <br> Designer & Developer.</h1>
+          <p class="hero-text">
+            Antool is a web collection of information on paid or <br> free Design
+            and Development tools
+          </p>
+          <form class="hero-form">
             <div class="hero-search">
-              <input type="text" placeholder="find more than 430+ tools..."  class="hero-input"/>
+              <input type="text" placeholder="find more than 430+ tools..." class="hero-input" />
               <button class="hero-button">Search</button>
             </div>
-            <div class="network">
-              <ul class="network-list">
-                <li class="network-item">
-                  <img
-                    src="./src/img/social-network/facebook.webp"
-                    alt="facebook"
-                  />
-                </li>
-                <li class="network-item">
-                  <img
-                    src="./src/img/social-network/instagram.webp"
-                    alt="instagram"
-                  />
-                </li>
-                <li class="network-item">
-                  <img
-                    src="./src/img/social-network/twitter.webp"
-                    alt="twitter"
-                  />
-                </li>
-              </ul>
-            </div>
+            <ul class="network-list">
+              <li class="network-item">
+                <img src="./src/img/social-network/facebook.webp" alt="facebook" />
+              </li>
+              <li class="network-item">
+                <img src="./src/img/social-network/instagram.webp" alt="instagram" />
+              </li>
+              <li class="network-item">
+                <img src="./src/img/social-network/twitter.webp" alt="twitter" />
+              </li>
+            </ul>
           </form>
-          </div>
-          <div class="hero-bg"></div>
         </div>
-      </section>
-      <section class="tools">
-        <div class="container">
-          <h1 class="tools-title">Most Popular Tools</h1>
+        <div class="hero-bg"></div>
+      </div>
+    </section>
+    <section class="tools">
+      <div class="container">
+        <div class="tools-title_subtitle">
+          <h2 class="tools-title">Most Popular Tools</h2>
           <p class="tools-text">
             Tools for the best Designers and Developers most popularly used in
             the world
           </p>
-          <div class="tools-cards">
-            <article class="card-name">
+        </div>
+        <div class="tools-cards">
+          <article class="card">
+            <div class="card-name">
               <img src="./src/img/popular-tools/figma.webp" alt="figma" />
-              <ul class="name-list">
-                <li class="name-item-title">FIGMA</li>
-                <li class="name-item-text">Free</li>
-              </ul>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="card-visit">
-                <div class="visit-icons">
-                  <img src="./src/img/visit-icons/like.webp" alt="like" />
-                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                </div>
-                <a href="#" class="card-link">Visit</a>
+              <div class="name-tool">
+                <h2 class="name-item-title">FIGMA </h2>
+                <p class="name-item-text">Free</p>
               </div>
-            </article>
-            
-            <article class="card-name">
-              <img src="./src/img/popular-tools/sketch.webp" alt="sketch" />
-              <ul class="name-list">
-                <li class="name-item-title">Sketch</li>
-                <li class="name-item-text">Trial & Paid</li>
-              </ul>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="card-visit">
-                <div class="visit-icons">
-                  <img src="./src/img/visit-icons/like.webp" alt="like" />
-                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                </div>
-                <a href="#" class="card-link">Visit</a>
-              </div>
-            </article>
-            <article class="card-name">
-              <img src="./src/img/popular-tools/vscode.webp" alt="vscode" />
-              <ul class="name-list">
-                <li class="name-item-title">Visual Studio Code</li>
-                <li class="name-item-text">Free</li>
-              </ul>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="card-visit">
-                <div class="visit-icons">
-                  <img src="./src/img/visit-icons/like.webp" alt="like" />
-                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                </div>
-                <a href="#" class="card-link">Visit</a>
-              </div> 
-            </article>
-
-            <article class="card-name">
-              <img src="./src/img/popular-tools/notion.webp" alt="notion" />
-              <ul class="name-list">
-                <li class="name-item-title">Notion</li>
-                <li class="name-item-text">Free & Paid</li>
-              </ul>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="card-visit">
-                <div class="visit-icons">
-                  <img src="./src/img/visit-icons/like.webp" alt="like" />
-                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                </div>
-                <a href="#" class="card-link">Visit</a>
-              </div>
-            </article>
-
-            <article class="card-name">
-
-              <img src="./src/img/popular-tools/slack.webp" alt="slack" />
-              <ul class="name-list">
-                <li class="name-item-title">Slack</li>
-                <li class="name-item-text">Free & Paid</li>
-              </ul>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="card-visit">
-                <div class="visit-icons">
-                  <img src="./src/img/visit-icons/like.webp" alt="like" />
-                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                </div>
-                <a href="#" class="card-link">Visit</a>
-              </div>
-            </article>
-
-            <article class="card-name">
-
-              <img src="./src/img/popular-tools/invision.webp" alt="invision" />
-              <ul class="name-list">
-                <li class="name-item-title">Invision</li>
-                <li class="name-item-text">Free & Paid</li>
-              </ul>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="card-visit">
-                <div class="visit-icons">
-                  <img src="./src/img/visit-icons/like.webp" alt="like" />
-                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                </div>
-                <a href="#" class="card-link">Visit</a>
-              </div>
-            </article>
-          </div>
-          <button class="tools-button">Load more</button>
-        </div>
-      </section>
-      <section class="brands">
-        <div class="container">
-          <div class="brand">
-            <h2 class="brand-title">Trusted more than 150+ brand</h2>
-            <div class="brands-photo">
-              <a href="#">
-                <img
-                src="src/img/brand-images/microsoft.webp"
-                alt="microsoft"
-                class="brand-img"
-              />
-              </a>
-              <a href="#">
-                <img
-                src="src/img/brand-images/google.webp"
-                alt="google"
-                class="brand-img"
-              />
-              </a>
-              <a href="#">
-                <img
-                src="src/img/brand-images/slack.webp"
-                alt="slack"
-                class="brand-img"
-              />
-              </a>
-              <a href="#">
-                <img
-                src="src/img/brand-images/wordpress.webp"
-                alt="wordpress"
-                class="brand-img"
-              />
-              </a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="newcomer-tools">
-        <div class="container">
-          <div class="newcomer">
-            <div class="newcomer-updates">
-              <h2 class="updates-title">Newcomer Tools</h2>
-              <p class="updates-text">
-                Wow! see the latest update of the most recommended tools from
-                reliable designers and developers
-              </p>
-              <button class="updates-button">Explore more</button>
-            </div>
-            <div class="newcomer-blocks">
-              <article class="newcomer-block">
-                <img src="./src/img/updates/zeplin.webp" alt="invision" />
-                <div class="name-text">
-                  <h2 class="block-item-title">Zeplin</h2>
-                  <p class="block-item-text">Free & Paid</p>
-                </div>
-                <p class="newcomer-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="card-visit">
-                  <div class="visit-icons">
-                    <img src="./src/img/visit-icons/like.webp" alt="like" />
-                    <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                  </div>
-                <a href="#" class="card-link">Visit</a>
-                </div>
-              </article>
-  
-              <article class="newcomer-block">
-                <img src="./src/img/updates/phpstorm.webp" alt="invision" />
-                <div class="name-text">
-                  <h2 class="block-item-title">PHPStorm</h2>
-                  <p class="block-item-text">Free</p>
-                </div>
-                <p class="newcomer-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="card-visit">
-                  <div class="visit-icons">
-                    <img src="./src/img/visit-icons/like.webp" alt="like" />
-                    <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                  </div>
-                <a href="#" class="card-link">Visit</a>
-                </div>
-              </article>
-            
-              <article class="newcomer-block">
-                <img src="./src/img/updates/toolbox.webp" alt="invision" />
-                <div class="name-text">
-                  <h2 class="block-item-title">Toolbox</h2>
-                  <p class="block-item-text">Free</p>class
-                </div>
-                <p class="newcomer-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="card-visit">
-                  <div class="visit-icons">
-                    <img src="./src/img/visit-icons/like.webp" alt="like" />
-                    <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                  </div>
-                <a href="#" class="card-link">Visit</a>
-                </div>
-              </article>
-              <article class="newcomer-block">
-                <img src="./src/img/updates/procreate.webp" alt="invision" />
-                <div class="name-text">
-                  <h2 class="block-item-title">Procreate</h2>
-                  <p class="block-item-text">Paid</p>
-                </div>
-                <p class="newcomer-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="card-visit">
-                  <div class="visit-icons">
-                    <img src="./src/img/visit-icons/like.webp" alt="like" />
-                    <img src="./src/img/visit-icons/folder.webp" alt="folder" />
-                  </div>
-                  <a href="#" class="card-link">Visit</a>
-                </div>
-              </article>
-          </div>
-        </div>
-      </section>
-      <section class="developers">
-        <div class="container">
-          <div class="developer">
-
-            <h2 hidden>developer</h2>
-
-            <div class="developer-data">
-              <div class="developer-name">Ronald Richards</div>
-              <div class="developer-position">Product Manager</div>
-            </div>
-          </div>
-          <div class="developer-info">
-            <p class="developer-text">
-              Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
-              reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do
-              nulla velit labore occaecat do deserunt Lorem magna officia
-              incididunt consectetur amet. Sunt consectetur veniam minim ex
-              commodo sint non. Occaecat aute officia excepteur non laboris id
-              qui ad.
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-          </div>
-          
-        </div>
-      </section>
-      <section class="contributor">
-        <div class="container">
+              <div class="card-visit">
+                <img src="./src/img/visit-icons/like.webp" alt="like" />
+                <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                <a href="#" class="card-link">
+                  <button class="card-button">Visit</button>
+                </a>
+              </div>
 
-          <h2 hidden>contributor</h2>
-          <form class="contributor">
+          </article>
+
+          <article class="card">
+            <div class="card-name">
+              <img src="./src/img/popular-tools/sketch.webp" alt="sketch" />
+              <div class="name-tool">
+                <h2 class="name-item-title">Sketch</h2>
+                <p class="name-item-text">Trial & Paid</p>
+              </div>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                  <a href="#" class="card-link">
+                    <button class="card-button">Visit</button>
+                  </a>
+                </div>
+              </div>
+          </article>
+          <article class="card">
+            <div class="card-name">
+              <img src="./src/img/popular-tools/vscode.webp" alt="vscode" />
+              <div class="name-tool">
+                <h2 class="name-item-title">Visualtudio Code</h2>
+                <p class="name-item-text">Free</p>
+              </div>
+            </div>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="card-visit">
+              <div class="visit-icons">
+                <img src="./src/img/visit-icons/like.webp" alt="like" />
+                <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                <a href="#" class="card-link">
+                  <button class="card-button">Visit</button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-name">
+              <img src="./src/img/popular-tools/notion.webp" alt="notion" />
+              <div class="name-tool">
+                <h2 class="name-item-title">Notion</h2>
+                <p class="name-item-text">Free & Paid</p>
+              </div>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                  <a href="#" class="card-link">
+                    <button class="card-button">Visit</button>
+                  </a>
+                </div>
+              </div>
+          </article>
+
+          <article class="card">
+            <div class="card-name">
+              <img src="./src/img/popular-tools/slack.webp" alt="slack" />
+              <div class="name-tool">
+                <h2 class="name-item-title">Slack</h2>
+                <p class="name-item-text">Free & Paid</p>
+              </div>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                  <a href="#" class="card-link">
+                    <button class="card-button">Visit</button>
+                  </a>
+                </div>
+              </div>
+          </article>
+
+          <article class="card">
+            <div class="card-name">
+              <img src="./src/img/popular-tools/invision.webp" alt="invision" />
+              <div class="name-tool">
+                <h2 class="name-item-title">Invision</h2>
+                <p class="name-item-text">Free & Paid</p>
+              </div>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                  <a href="#" class="card-link">
+                    <button class="card-button">Visit</button>
+                  </a>
+                </div>
+              </div>
+          </article>
+        </div>
+        <button class="tools-button">Load more</button>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <div class="brand">
+          <h2 class="brand-title">Trusted more than 150+ brand</h2>
+          <div class="brands-photo">
+            <a href="#">
+              <img src="src/img/brand-images/microsoft.webp" alt="microsoft" class="brand-img" />
+            </a>
+            <a href="#">
+              <img src="src/img/brand-images/google.webp" alt="google" class="brand-img" />
+            </a>
+            <a href="#">
+              <img src="src/img/brand-images/slack.webp" alt="slack" class="brand-img" />
+            </a>
+            <a href="#">
+              <img src="src/img/brand-images/wordpress.webp" alt="wordpress" class="brand-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newcomer-tools">
+      <div class="container">
+        <div class="newcomer">
+          <div class="newcomer-updates">
+            <h2 class="updates-title">Newcomer Tools</h2>
+            <p class="updates-text">
+              Wow! see the latest update of the most recommended tools from
+              reliable designers and developers
+            </p>
+            <button class="updates-button">Explore more</button>
+          </div>
+          <div class="newcomer-blocks">
+            <article class="newcomer-block">
+              <img src="./src/img/updates/zeplin.webp" alt="invision" />
+              <div class="name-text">
+                <h2 class="block-item-title">Zeplin</h2>
+                <p class="block-item-text">Free & Paid</p>
+              </div>
+              <p class="newcomer-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                </div>
+                <a href="#" class="card-link">Visit</a>
+              </div>
+            </article>
+
+            <article class="newcomer-block">
+              <img src="./src/img/updates/phpstorm.webp" alt="invision" />
+              <div class="name-text">
+                <h2 class="block-item-title">PHPStorm</h2>
+                <p class="block-item-text">Free</p>
+              </div>
+              <p class="newcomer-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+                <span class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                  <a href="#" class="card-link">Visit</a>
+                </span>
+                
+
+            </article>
+
+            <article class="newcomer-block">
+              <img src="./src/img/updates/toolbox.webp" alt="invision" />
+              <div class="name-text">
+                <h2 class="block-item-title">Toolbox</h2>
+                <p class="block-item-text">Free</p>class
+              </div>
+              <p class="newcomer-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                </div>
+                <a href="#" class="card-link">Visit</a>
+              </div>
+            </article>
+            <article class="newcomer-block">
+              <img src="./src/img/updates/procreate.webp" alt="invision" />
+              <div class="name-text">
+                <h2 class="block-item-title">Procreate</h2>
+                <p class="block-item-text">Paid</p>
+              </div>
+              <p class="newcomer-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="card-visit">
+                <div class="visit-icons">
+                  <img src="./src/img/visit-icons/like.webp" alt="like" />
+                  <img src="./src/img/visit-icons/folder.webp" alt="folder" />
+                </div>
+                <a href="#" class="card-link">Visit</a>
+              </div>
+            </article>
+          </div>
+        </div>
+    </section>
+    <section class="developers">
+      <div class="container">
+        <div class="developer">
+
+          <h2 hidden>developer</h2>
+
+          <div class="developer-data">
+            <div class="developer-name">Ronald Richards</div>
+            <div class="developer-position">Product Manager</div>
+          </div>
+        </div>
+        <div class="developer-info">
+          <p class="developer-text">
+            Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
+            reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do
+            nulla velit labore occaecat do deserunt Lorem magna officia
+            incididunt consectetur amet. Sunt consectetur veniam minim ex
+            commodo sint non. Occaecat aute officia excepteur non laboris id
+            qui ad.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <section class="contributor">
+      <div class="container">
+
+        <h2 hidden>contributor</h2>
+        <form class="contributor">
           <h2 class="contributor-title">Become a contributor?</h2>
           <p class="contributor-subtitle">
             Join us and get tips & tricks to become a great Designer and
             Developer
           </p>
           <div class="contributor-search">
-            <input
-              type="text"
-              placeholder="Enter your email..."
-              class="contributor-input"
-            />
+            <input type="text" placeholder="Enter your email..." class="contributor-input" />
             <button class="contributor-button">Join Us</button>
           </div>
         </form>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a href="#" class="footer-link-logo">
-                <img
-                src="src/img/footer-logo/footer-logo.webp"
-                alt="footer-logo"
-              />
-              </a>
-              <a href="#" class="footer-title-logo">antools.</a>
-            </li>
-            <li class="footer-list-item">
-              Copyright 2021. Antools
-            </li>
-            <li class="footer-list-item">
-              Antool is a web collection of information on paid or free Design
-              and Development tools
-            </li>
-          </ul>
-          <div class="footer-list-info">
-            <span class="info-item-title"><a href="#" class="info-link">Contact Us</a></span>
-            <span class="info-item"><a href="tel:+621987463" class="info-link">+621987463</a></span>
-            <span class="info-item"><address class="info-address" class="info-link">M Building, No.10 A</address></span>
-            <span class="info-item"><a href="mailto:antools@awesome.com" class="info-link">antools@awesome.com</a></span>
-          </div>
-          <div class="footer-list-info">
-            <span class="info-item-title"><a href="#" class="info-link">Categories</a></span>
-            <span class="info-item"><a href="#" class="info-link">Design</a></span>
-            <span class="info-item"><a href="#" class="info-link">Development</a></span>
-          </div>
-          <div class="footer-list-info">
-            <span class="info-item-title"><a href="#" class="info-link">Company Info</a></span>
-            <span class="info-item"><a href="#" class="info-link">About Us</a></span>
-            <span class="info-item"><a href="#" class="info-link">Our Partners</a></span>
-            <span class="info-item"><a href="#" class="info-link">Blog</a></span>
-          </div>
-        </div>
-    </footer>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a href="#" class="footer-link-logo">
+            <img src="src/img/footer-logo/footer-logo.webp" alt="footer-logo" />
+          </a>
+          <a href="#" class="footer-title-logo">antools.</a>
+        </li>
+        <li class="footer-list-item">
+          Copyright 2021. Antools
+        </li>
+        <li class="footer-list-item">
+          Antool is a web collection of information on paid or free Design
+          and Development tools
+        </li>
+      </ul>
+      <div class="footer-list-info">
+        <span class="info-item-title"><a href="#" class="info-link">Contact Us</a></span>
+        <span class="info-item"><a href="tel:+621987463" class="info-link">+621987463</a></span>
+        <span class="info-item">
+          <address class="info-address" class="info-link">M Building, No.10 A</address>
+        </span>
+        <span class="info-item"><a href="mailto:antools@awesome.com" class="info-link">antools@awesome.com</a></span>
+      </div>
+      <div class="footer-list-info">
+        <span class="info-item-title"><a href="#" class="info-link">Categories</a></span>
+        <span class="info-item"><a href="#" class="info-link">Design</a></span>
+        <span class="info-item"><a href="#" class="info-link">Development</a></span>
+      </div>
+      <div class="footer-list-info">
+        <span class="info-item-title"><a href="#" class="info-link">Company Info</a></span>
+        <span class="info-item"><a href="#" class="info-link">About Us</a></span>
+        <span class="info-item"><a href="#" class="info-link">Our Partners</a></span>
+        <span class="info-item"><a href="#" class="info-link">Blog</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
