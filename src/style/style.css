@@ -6,6 +6,7 @@
     --colorBackground: #1E252B;
     --colorInputBackground: #283036;
     --colorBackgroundSecondary: #f5f4fa;
+    --colorTollsFree: 255,165,55;
 }
 
 body {
@@ -69,7 +70,7 @@ body {
 .login-button{
     background-color: var(--colorButton);
     border-radius: 8px;
-    padding: 12px 28px 12px 28px;
+    padding: 12px 28px;
     color: var(--colorTextButton);
 }
 .menu-item {
@@ -166,47 +167,112 @@ body {
     padding-top: 110px;
 }
 
-.tools-title_subtitle h2{
+.tools-title{
     padding: 191.85px 384px 20px 385px;
     text-align: center;
 }
-.tools-title_subtitle p{
+.tools-text{
     padding: 0px 398px 90px 399px;
     text-align: center;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    
+    font-size: 18px;
 }
 .tools-title{
     font-size: 48px;
     font-weight: 130%;
 }
-.tools-text{
-    font-size: 18px;
+
+.tools-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 392px);
+    column-gap: 25px;
+    row-gap: 15px;
+    padding-bottom: 94px;
+    justify-content: center;
 }
-.name-item-title, .block-item-title{
-    font-size: 24px;
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 33px;
+    position: relative;
+    border-radius: 10px;
+    transition: all 1s ease; /* Оставляем только одно свойство transition */
+    overflow: hidden;
+    cursor: pointer;
 }
-.name-item-text, .block-item-text{
-    font-weight: 400;
-    font-size: 18px;
+.card:hover .card-description {
+    color: var(--colorText);
 }
-.card-description{
-    font-weight: 400;
+.card:hover .name-item-text {
+    color: rgba(var(--colorTollsFree));
+}
+.card:hover::before {
+    content: '';
+    position: absolute; /* добавляем позиционирование */
+    top: 0;            /* растягиваем псевдоэлемент */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg, #ffac4d3b 1%, #1E252B 20%);
+    
+    z-index: -1; /* обеспечиваем, чтобы он был позади содержимого карточки */
+}
+.card-name {
+    display: flex;
+    flex-direction: row;
     
 }
-.card-link{
-    font-weight: 600;
+.name-tool {
+    padding-left: 30px;
 }
+.name-item-title, .block-item-title {
+    font-size: 24px;
+}
+.name-item-text, .block-item-text {
+    color: rgba(var(--colorTollsFree), 55%);
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+.card-description {
+    font-weight: 400;
+    padding: 30px 0px;
+}
+.card-visit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-button {
+    font-weight: 600;
+    color: rgba(var(--colorTextAdd), 55%);
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    padding: 9px 35px 9px 35px;
+
+}
+
+.card-button:hover {
+        background-color: var(--colorButton);
+    color: var(--colorText);
+}
+
 .newcomer-description{
     font-weight: 400;
     font-size: 14px;
 }
 .tools-button{
+    margin-left: 520px;
+    padding: 17px 38px;
     font-size: 20px;
+    background: none;
+    color: var(--colorButton);
+    border: 1px solid #595959;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .brand-title{
     font-size: 24px;
@@ -241,7 +307,7 @@ body {
 .info-item-title{
     font-size: 20px;    
 }
-.info-item, .hero-text,.tools-text,.updates-text,.newcomer-description,.developer-position,.contributor-subtitle{
+.info-item, .hero-text,.tools-text,.card-description,.updates-text,.newcomer-description,.developer-position,.contributor-subtitle{
     color: rgba(var(--colorTextAdd), 55%);
 }
 .name-item-title,.block-item-title,.developer-name,.developer-text{
