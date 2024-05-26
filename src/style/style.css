@@ -544,7 +544,7 @@ body {
 
 
 .footer {
-    padding: 70px 0;
+    padding: 70px 0px 98px 0px;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
   
@@ -552,7 +552,6 @@ body {
   
   .footer-lists {
     display: flex;
-    
     justify-content: space-between;
   }
   
@@ -560,10 +559,15 @@ body {
     max-width: 260px;
   }
 
+  .footer-list-item{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    gap: 12px;
+  }
   
   .footer-title-logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
   }
   
   .info-lists {
@@ -579,34 +583,18 @@ body {
   }
   
   .footer-list-subtitle{
+    padding-top: 25px;
     padding-bottom: 21px;
   }
-  .info-item-title{
-    
-  }
   .info-item-title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;   
     padding-bottom: 20px;
     display: block;
   }
-  
   .info-item {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
-  
-  .info-link {
-    text-decoration: none;
-  }
-  
-  
-  .info-address {
-    font-style: normal;
-  }
-  
-.info-item-title{
-    font-size: 20px;    
-}
+
 .info-item, .hero-text,.tools-text,.card-description,.updates-text,.newcomer-description,.developer-position,.contributor-subtitle,.footer-list-item{
     color: rgba(var(--colorTextAdd), 55%);
 }
