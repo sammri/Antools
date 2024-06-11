@@ -300,7 +300,6 @@ body {
     font-size: 20px;
     background: none;
     color: var(--colorButton);
-    border: 1px solid #595959;
     border-radius: 8px;
     cursor: pointer;
     padding: 18px 38px;
@@ -397,7 +396,6 @@ body {
     transition: background-color 0.3s, color 0.3s; 
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid #1E252B;
     padding: 20px;
     transition:  0.4s;
 }
