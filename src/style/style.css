@@ -396,6 +396,7 @@ body {
     transition: background-color 0.3s, color 0.3s; 
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid #1E252B;
     padding: 20px;
     transition:  0.4s;
 }
