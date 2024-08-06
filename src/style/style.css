@@ -1,3 +1,4 @@
+
 :root {
     --colorText: #fff;
     --colorTextButton: #FDF5FF;
@@ -99,21 +100,25 @@ body {
     flex-direction: row;
 
 }
-.hero{
+.hero {
     background-image: url(../img/hero-bg/hero-bg.svg);
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: right;  
+    background-position: right 0; 
+    animation: slideDown 0.5s ease-out; 
 }
+
 
 .hero-flex{
     margin-top: 104px;
 }
-.hero-title{
+.hero-title {
     font-size: 50px;
     line-height: 140%;
     margin-bottom: 30px;
+    --animate-duration: 1.5s;
 }
+
 .hero-span{
     color: var(--colorButton);
 }
@@ -121,6 +126,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 60px;
+    
 }
 .hero-search {
     display: flex;

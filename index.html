@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,8 +59,8 @@
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-flex">
-          <h1 class="hero-title">Awesome tools for <br> Designer & Developer<span class="hero-span">.</span></h1>
-          <p class="hero-text">
+          <h1 class="hero-title animate__animated animate__bounceInLeft ">Awesome tools for <br> Designer & Developer<span class="hero-span">.</span></h1>
+          <p class="hero-text"> 
             Antool is a web collection of information on paid or <br> free Design
             and Development tools
           </p>
@@ -96,7 +97,7 @@
           </p>
         </div>
         <div class="tools-cards">
-          <article class="card">
+          <article class="card" data-aos="fade-left">
             <div class="card-name">
               <div class="card-photo">
                 <img src="./src/img/popular-tools/figma.webp" alt="figma" />
@@ -119,7 +120,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-up">
             <div class="card-name">
               <div class="card-photo">
                 <img src="./src/img/popular-tools/sketch.webp" alt="sketch" />
@@ -141,7 +142,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-right">
             <div class="card-name">
               <div class="card-photo">
                 <img src="./src/img/popular-tools/vscode.webp" alt="vscode" />
@@ -163,7 +164,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-left">
             <div class="card-name">
               <div class="card-photo">
                 <img src="./src/img/popular-tools/notion.webp" alt="notion" />
@@ -185,7 +186,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-up">
             <div class="card-name">
               <div class="card-photo">
                 <img src="./src/img/popular-tools/slack.webp" alt="slack" />
@@ -207,7 +208,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-right">
             <div class="card-name">
               <div class="card-photo">
                 <img src="./src/img/popular-tools/invision.webp" alt="invision" />
@@ -234,7 +235,7 @@
     </section>
     <section class="brands">
       <div class="container">
-        <div class="brand">
+        <div class="brand" data-aos="flip-up">
           <h2 class="brand-title">Trusted more than 150+ brand</h2>
           <div class="brands-photo">
             <a href="#">
@@ -267,7 +268,7 @@
             </div>
           </div>
           <div class="newcomer-blocks">
-            <article class="newcomer-card">
+            <article class="newcomer-card" data-aos="fade-up">
               <div class="card-name">
                 <div class="newcomer-photo">
                   <img src="./src/img/updates/zeplin.webp" alt="zeplin" />
@@ -289,7 +290,7 @@
               </div>
             </article>
 
-            <article class="newcomer-card">
+            <article class="newcomer-card" data-aos="fade-left">
               <div class="card-name">
                 <div class="newcomer-photo">
                   <img src="./src/img/updates/phpstorm.webp" alt="phpstorm" />
@@ -311,7 +312,7 @@
               </div>
             </article>
 
-            <article class="newcomer-card">
+            <article class="newcomer-card" data-aos="fade-up">
               <div class="card-name">
                 <div class="newcomer-photo">
                   <img src="./src/img/updates/toolbox.webp" alt="toolbox" />
@@ -333,7 +334,7 @@
               </div>
             </article>
 
-            <article class="newcomer-card">
+            <article class="newcomer-card" data-aos="fade-left">
               <div class="card-name">
                 <div class="newcomer-photo">
                   <img src="./src/img/updates/procreate.webp" alt="procreate" />
@@ -366,11 +367,11 @@
 
       <div class="container">
         <div class="developer">
-          <div class="dev-arrow_left">
+          <div class="dev-arrow_left" data-aos="fade-left">
           </div>
 
           <div class="developer-data">
-            <div class="name-position">
+            <div class="name-position" data-aos="fade-up">
               <div class="developer-name">Ronald Richards</div>
               <div class="developer-position">Product Manager</div>
             </div>
@@ -385,7 +386,7 @@
             qui ad.
           </p>
 
-          <div class="dev-arrow_right">
+          <div class="dev-arrow_right" data-aos="fade-right">
           </div>
         </div>
       </div>
@@ -415,8 +416,8 @@
   </main>
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-lists">
-        <div class="footer-list">
+      <div class="footer-lists" data-aos="fade-up">
+        <div class="footer-list" >
           <p class="footer-list-item">
             <a href="#" class="footer-link-logo">
               <img src="src/img/footer-logo/footer-logo.webp" alt="footer-logo" class="link-img-logo" />
@@ -453,7 +454,10 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
